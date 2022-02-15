@@ -1,0 +1,144 @@
+/* This is the stylesheet that will be included in all html pages to ensure the website is uniform and consistent*/
+
+h1 {
+    text-align: center;
+    background-color: bisque;
+}
+
+h2 {
+    text-align: center;
+}
+/*To deal with lists and lists that are hyperlinked*/
+ul{
+    list-style-type: none;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: black;
+}
+
+li {
+    display: inline;
+    border-right: 1px solid whitesmoke;
+    padding: 8px;
+    color: white;
+}
+/*pseudoclasses for visited and hovered over links to indicate interest*/
+ul a:hover {
+    border-color: whitesmoke;
+    border-width: 3px;
+}
+
+a:visited {
+    color: white;
+    background-color: black;
+}
+
+#right{
+    float:right;
+}
+
+body {
+    background-color: burlywood;
+}
+
+nav {
+    padding: 10px;
+    color: whitesmoke;
+    background-color:black;
+    margin-bottom: 32px;
+    margin-left: 500px;
+    display: inline-block;
+}
+
+nav a {
+    border-right: 1px solid whitesmoke;
+    padding: 10px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+}
+/*Made the footer black to break the color monotony*/
+footer {
+    background-color: black;
+}
+
+footer p {
+    color: azure;
+}
+
+img {
+    width: 480px;
+    height:320px;
+}
+
+a {
+    text-decoration: none;
+    color: azure;
+}
+
+a:hover {
+    color: yellow;
+}
+
+#Contacts {
+    color: azure;
+}
+
+#logo{
+    border-radius:50%;
+    max-width: 45px;
+    max-height: 40px;
+    float:left;
+}
+/*I have used the flex-box model to separate the images from the text*/
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    font-size: larger;
+}
+
+.flex-container > div {
+    margin: 10px;
+    padding: 10px 100px 10px 2px;
+}
+
+footer > div {
+    padding: 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: large;
+        align-items: center;
+    }
+
+    .flex-container > div {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    img {
+        width: 350px;
+        height:200px;
+    }
+
+    nav {
+        display: block;
+        padding: 10px;
+        color: whitesmoke;
+        background-color:black;
+        width: fit-content;
+        margin: auto;
+        display: inline-block; 
+    }
+
+}
