@@ -1,0 +1,13 @@
+/*The style sheet for my about.html page*/
+
+#me {
+    padding: 0 50px;
+    width: 320px;
+    height:320px;
+    border-radius: 50%;
+}
+
+#tweet {
+    margin: auto;
+    width: 50%;
+}
